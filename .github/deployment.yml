@@ -1,0 +1,14 @@
+# Preview deployments via github-deployment-infrastructure (gdi).
+# See https://github.com/filstawski/github-deployment-infrastructure
+name: gasthaus-lutz
+provider: github-pages
+github:
+  deployment_owner: surdic-deployments
+defaults:
+  ttl: 3d
+repository:
+  prefix: gasthaus-lutz
+build:
+  framework: auto
+preview:
+  healthcheck: /
